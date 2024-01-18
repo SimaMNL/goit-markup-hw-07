@@ -327,7 +327,7 @@ input:checked + .names-label span:first-child {
 
 /* Close-modal-styling */
 
-.parent {
+/* .parent {
   display: flex;
   width: 1158px;
   padding: 25px 156px 25px 156px;
@@ -337,7 +337,7 @@ input:checked + .names-label span:first-child {
   flex-shrink: 0;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
 /* .header-container {
   border-bottom: 1px solid #e7e9fc;
@@ -1182,35 +1182,15 @@ input:checked + .names-label span:first-child {
 
 /* Button classes menu mobile */
 
-.button-mobile {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
-
-.svg-button-mobile {
-  fill: black;
-  color: black;
-}
-
-.button-mobile:hover,
-.button-mobile:focus {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 768px) {
+@media (max-width: 428px) {
   .button-mobile {
-    display: none;
+    display: flex;
+    justify-content: end;
+    width: 32px;
+    height: 32px;
+    color: black;
+    fill: black;
+    background-color: black;
   }
   .menu-container {
     position: fixed;
@@ -1228,7 +1208,50 @@ input:checked + .names-label span:first-child {
   .menu-container.is-open {
     transform: translateX(0);
   }
+
+  .logo-mobile {
+    display: flex;
+  }
+
+  .mobile-button-close {
+    fill: black;
+    width: 32px;
+    height: 32px;
+  }
+
+  .button-mobile {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    /* background-color: transparent; */
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  .svg-button-mobile {
+    fill: black;
+    color: black;
+  }
+
+  .button-mobile:hover,
+  .button-mobile:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-logo-and-ham {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
+/* Classes for desktop */
 
 @media (min-width: 1158px) {
   .header-container {
@@ -1240,7 +1263,7 @@ input:checked + .names-label span:first-child {
   .parent {
     display: flex;
     max-width: 1158px;
-    padding: 25px 156px 25px 156px;
+    /* padding: 25px 156px 25px 156px; */
     border-bottom: 1px solid var(--corn-flower);
     background: var(--WHITE, #fff);
     height: 72px;
