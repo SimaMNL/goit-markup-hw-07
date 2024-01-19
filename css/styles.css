@@ -591,10 +591,6 @@ input:checked + .names-label span:first-child {
   flex-basis: calc((100% - 3 * 16px) / 3);
 }
 
-.our-team-section {
-  padding: 120px 0 120px;
-}
-
 .box-shadow {
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE, #fff);
@@ -1217,16 +1213,10 @@ input:checked + .names-label span:first-child {
   }
 
   .title-proposition-name {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 111.111%;
-    letter-spacing: 0.72px;
-    margin-bottom: 8px;
-    text-align: center;
-  }
-
-  .our-us {
+    font-size: 20px;
     font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.4px;
   }
 
   .section-tree-photo {
@@ -1236,20 +1226,19 @@ input:checked + .names-label span:first-child {
   .box-shadow {
     width: auto;
   }
+
+  .our-team-section {
+    padding: 96px 82px;
+  }
+
+  .container {
+    padding: 0;
+  }
 }
 
 /* Mobile hamburg classes */
 
 @media (max-width: 428px) {
-  .button-mobile {
-    display: flex;
-    justify-content: end;
-    width: 32px;
-    height: 32px;
-    color: black;
-    fill: black;
-    background-color: black;
-  }
   .menu-container {
     position: fixed;
     top: 0;
@@ -1290,13 +1279,8 @@ input:checked + .names-label span:first-child {
   .button-mobile {
     height: 22px;
     width: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     margin: 0;
     padding: 0;
-    /* background-color: transparent; */
     cursor: pointer;
     border: none;
     border-radius: 50%;
