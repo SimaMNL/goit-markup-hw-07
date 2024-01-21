@@ -1172,7 +1172,7 @@ input:checked + .names-label span:first-child {
 
 /* Secetion 1 classes mobile */
 
-@media (max-width: 428px) {
+@media (max-width: 431px) {
   .hidden-on-mobile-for-desktop {
     display: none;
   }
@@ -1201,7 +1201,7 @@ input:checked + .names-label span:first-child {
 
   .main-section {
     padding: 112px 0;
-    max-width: 428px;
+    max-width: 431px;
     height: 432px;
   }
 
@@ -1290,7 +1290,7 @@ input:checked + .names-label span:first-child {
 
 /* Mobile hamburg classes */
 
-@media (max-width: 428px) {
+@media (max-width: 431px) {
   .menu-container {
     position: fixed;
     top: 0;
