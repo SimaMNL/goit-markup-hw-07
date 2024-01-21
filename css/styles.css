@@ -1366,6 +1366,16 @@ input:checked + .names-label span:first-child {
   .underline-nav-link-studio::after {
     display: none;
   }
+
+  /* mobile hamburg styling classes */
+
+  .nav-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
 }
 
 /* classes for tablet */
