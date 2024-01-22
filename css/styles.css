@@ -1011,7 +1011,7 @@ input:checked + .names-label span:first-child {
 }
 
 .footer-container {
-  /* display: flex; */
+  display: flex;
   align-items: baseline;
   max-width: 1158px;
   margin: 0 auto;
@@ -1209,13 +1209,6 @@ input:checked + .names-label span:first-child {
     display: flex;
   }
 
-  /* .footer-color {
-  } */
-
-  /* .footer-container {
-    max-width: ;
-  } */
-
   .title-footer-sec {
     margin: 0;
     text-align: center;
@@ -1360,7 +1353,7 @@ input:checked + .names-label span:first-child {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 120% */
+    line-height: 120%;
     letter-spacing: 0.4px;
   }
 
@@ -1382,13 +1375,223 @@ input:checked + .names-label span:first-child {
   .social-media-parent-mobile {
     gap: 56px;
   }
+
+  .footer-container {
+    display: flow-root;
+  }
 }
 
 /* Mobile hamburg classes closed */
 
 /* classes for tablet */
 
-@media (max-width: 768px) {
+@media (min-width: 431px) and (max-width: 768px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 80px 36px;
+    background: var(--WHITE, #fff);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+
+  .hidden-tablet {
+    display: none;
+  }
+
+  .logo-mobile {
+    padding: 25px 0 25px 16px;
+  }
+
+  .mobile-button-close {
+    fill: black;
+    width: 24px;
+    height: 24px;
+    stroke-width: 1px;
+    stroke: var(--NAVY-BLUE, #2e2f42);
+    border-radius: 50%;
+    /* border: 1px solid color(#e7e9fc); */
+    opacity: 0.1;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+  }
+
+  .button-mobile {
+    height: 22px;
+    width: 32px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    margin: 24px 16px 24px 0;
+  }
+
+  .svg-button-mobile {
+    fill: black;
+    color: black;
+  }
+
+  .button-mobile:hover,
+  .button-mobile:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .main-section {
+    height: 436px;
+    padding: 112px 0;
+  }
+
+  .title-proposition-name {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
+    text-align: center;
+  }
+
+  .social-media-parent-mobile {
+    gap: 56px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+
+  .list-element > .svg-icons {
+    display: none;
+  }
+
+  .list-our-us-content {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 74px;
+    justify-content: center;
+  }
+
+  .list-element {
+    width: 264px;
+  }
+  /* 
+  .hidden-on-mobile-for-desktop {
+    display: none;
+  } */
+
+  .section-tree-photo {
+    display: none;
+  }
+
+  .custemers-child {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    justify-content: center;
+    row-gap: 72px;
+  }
+
+  .box-shadow {
+    width: auto;
+  }
+
+  .list-out-team-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .our-team-section {
+    padding: 96px 0;
+  }
+
+  .customers-section {
+    padding: 96px 0;
+  }
+
+  .footer-color {
+    padding: 97px 50px 104px 108px;
+  }
+
+  .form-footer-div {
+    margin: 0;
+  }
+
+  .title-footer-sec {
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+
+  .button-font {
+    margin-left: 290px;
+  }
+
+  .mobile-logo-and-ham {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+  }
+
+  /* hamburger tablet styling */
+
+  .studio-nav-color {
+    color: var(--blue-color);
+  }
+
+  .nav-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+
+  .nav-container {
+    margin-bottom: 284px;
+  }
+
+  .list-contact-hamburger-mobile {
+    color: var(--blue-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+
+  .list-contact-email-mobile {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.4px;
+  }
+
+  .list-ham-gap {
+    gap: 40px;
+  }
+
+  .nav-list-items {
+    margin-left: 0;
+  }
+
+  .nav-list-items-address {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 48px;
+  }
 }
 
 /* Classes for desktop */
