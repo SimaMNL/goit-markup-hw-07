@@ -1392,7 +1392,7 @@ input:checked + .names-label span:first-child {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 80px 36px;
+    padding: 80px 60px;
     background: var(--WHITE, #fff);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -1467,6 +1467,7 @@ input:checked + .names-label span:first-child {
 
   .social-media-parent-mobile {
     gap: 56px;
+    display: flex;
   }
 
   .footer-container {
@@ -1555,10 +1556,11 @@ input:checked + .names-label span:first-child {
     line-height: 111.111%;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    position: unset;
   }
 
   .nav-container {
-    margin-bottom: 284px;
+    margin-bottom: 160px;
   }
 
   .list-contact-hamburger-mobile {
@@ -1596,7 +1598,7 @@ input:checked + .names-label span:first-child {
 
 /* Classes for desktop */
 
-@media (min-width: 1158px) {
+@media (min-width: 768px) {
   .header-container {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -1628,7 +1630,6 @@ input:checked + .names-label span:first-child {
     font-style: normal;
     justify-content: space-between;
     display: flex;
-    margin-left: 156px;
   }
 
   .nav-link:hover,
