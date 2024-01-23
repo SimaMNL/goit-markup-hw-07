@@ -768,7 +768,7 @@ input:checked + .names-label span:first-child {
   padding: 100px 0 100px;
   background: var(--navy-blue-color);
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .social-media-footer {
@@ -1014,7 +1014,7 @@ input:checked + .names-label span:first-child {
   display: flex;
   align-items: baseline;
   max-width: 1158px;
-  margin: 0 auto;
+  margin: 0 20px;
   padding: 0 15px;
 }
 
@@ -1236,6 +1236,10 @@ input:checked + .names-label span:first-child {
 
   .footer-color {
     padding: 100px 0 200px;
+  }
+
+  .footer-color {
+    justify-content: center;
   }
 }
 
@@ -1522,7 +1526,7 @@ input:checked + .names-label span:first-child {
   }
 
   .footer-color {
-    padding: 97px 60px 100px 108px;
+    padding: 97px 60px 100px 60px;
   }
 
   .form-footer-div {
