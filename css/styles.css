@@ -464,7 +464,7 @@ input:checked + .names-label span:first-child {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1440px;
+  max-width: 1440px;
   background-position: center;
   margin-inline: auto;
 }
@@ -834,12 +834,6 @@ input:checked + .names-label span:first-child {
   padding: 0;
 }
 
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .images {
   display: block;
   max-width: 100%;
@@ -1125,6 +1119,12 @@ input:checked + .names-label span:first-child {
   color: #ffffff;
 }
 
+.container {
+  max-width: 1158px;
+  margin: 0;
+  padding: 0 15px;
+}
+
 /* Button classes menu mobile */
 
 /* Secetion 1 classes mobile */
@@ -1145,6 +1145,7 @@ input:checked + .names-label span:first-child {
   .section-two {
     padding: 96px 16px;
     text-align: center;
+    min-width: 432px;
   }
 
   .header-title {
@@ -1158,7 +1159,7 @@ input:checked + .names-label span:first-child {
 
   .main-section {
     padding: 112px 0;
-    max-width: 431px;
+    min-width: 432px;
     height: 432px;
   }
 
@@ -1181,13 +1182,18 @@ input:checked + .names-label span:first-child {
   .our-team-section {
     padding: 96px 0;
     text-align: center;
+    min-width: 431px;
+  }
+
+  .customers-section {
+    min-width: 431px;
   }
 
   .container {
-    width: 1158px;
+    /* width: 1158px; */
     margin: 0;
     padding: 0 15px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   .list-our-us-content {
@@ -1241,6 +1247,7 @@ input:checked + .names-label span:first-child {
 
   .footer-color {
     justify-content: center;
+    min-width: 432px;
   }
 }
 
@@ -1251,8 +1258,8 @@ input:checked + .names-label span:first-child {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 80px 36px;
     background: var(--WHITE, #fff);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -1314,6 +1321,7 @@ input:checked + .names-label span:first-child {
     display: flex;
     justify-content: space-between;
     overflow-x: hidden;
+    min-width: 431px;
   }
 
   .list {
@@ -1412,8 +1420,8 @@ input:checked + .names-label span:first-child {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 80px 60px;
     background: var(--WHITE, #fff);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
@@ -1667,5 +1675,22 @@ input:checked + .names-label span:first-child {
 
   .form-label {
     position: absolute;
+  }
+
+  .container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .main-section {
+    display: table;
+  }
+
+  .our-team-section {
+    min-width: 1158px;
+  }
+
+  .footer-color {
+    min-width: 1158px;
   }
 }
