@@ -768,7 +768,7 @@ input:checked + .names-label span:first-child {
   padding: 100px 0 100px;
   background: var(--navy-blue-color);
   flex-direction: row;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .social-media-footer {
@@ -1239,6 +1239,7 @@ input:checked + .names-label span:first-child {
   .button-font {
     position: relative;
     top: 60px;
+    margin-left: 50px;
   }
 
   .footer-color {
@@ -1398,14 +1399,14 @@ input:checked + .names-label span:first-child {
 
 /* classes for tablet */
 
-@media (min-width: 431px) and (max-width: 568px) {
+@media (min-width: 431px) and (max-width: 668px) {
   .button-font {
     position: absolute;
     top: 100px;
   }
 
   .button-font {
-    margin-left: 0;
+    margin-left: 50px;
   }
 }
 
@@ -1502,6 +1503,8 @@ input:checked + .names-label span:first-child {
 
   .footer-container {
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 
   .list-element > .svg-icons {
@@ -1674,7 +1677,7 @@ input:checked + .names-label span:first-child {
   }
 
   .form-label {
-    position: absolute;
+    /* position: absolute; */
   }
 
   .container {
@@ -1692,5 +1695,10 @@ input:checked + .names-label span:first-child {
 
   .footer-color {
     min-width: 1158px;
+  }
+
+  .button-font {
+    margin-top: 60px;
+    margin-left: 0;
   }
 }
